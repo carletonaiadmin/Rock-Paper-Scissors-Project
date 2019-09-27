@@ -33,3 +33,9 @@ Github: shane-f03
 Computer Science, 3rd Year
 
 Github: kelvinttran
+
+## Kevin Wu
+
+Cognitive Science, 1st Year, Python
+
+Github: blankkcanvas
