@@ -56,6 +56,9 @@ Computer Systems, 3rd Year
 
 Github: Hasan-Baig
 
+## Mohamed Temkit
+Computer Science, 1st Year
+Github: mtemkit
 
 ## Johnny Park
 Stat,1,JohnnyPark99
