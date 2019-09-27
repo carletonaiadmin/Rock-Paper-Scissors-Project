@@ -28,3 +28,8 @@ Github: h4sohail
 Computer Science, 1st Year, Python
 
 Github: shane-f03
+
+##Kelvin Tran
+Computer Science, 3rd Year
+
+Github: kelvinttran
