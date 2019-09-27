@@ -14,3 +14,8 @@ Math, 4th Year, Python
 ## David Araya, Computer Science, COBOL, david-araya, I would like to stop Climate Change
 
 Github: sjsPuzzler
+
+## Hamza Sohail
+Computer Science, 1st Year, Python and C/C++
+
+Github: h4sohail
