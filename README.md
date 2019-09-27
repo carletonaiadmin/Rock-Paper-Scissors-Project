@@ -17,14 +17,3 @@ I suggest you use a pretty code viewing text editor like this: https://www.subli
 Find the demo files with a description here: https://github.com/sachag678/freeCodeCamp.
 
 Save the html and js files on your computer in the same folder and open the html file.
-
-### Task 4: download the language you'll be using
-(we're going to decide today which of these we need)
-
-https://www.python.org/
-
-https://www.scipy.org/
-
-https://pytorch.org/
-
-https://www.tensorflow.org/
