@@ -40,5 +40,7 @@ Cognitive Science, 1st Year, Python
 
 Github: blankkcanvas
 
-## MANOJ GOLI
-Computer Engineering, Meng, Python
+## Julia Cai
+Computer Science, 3rd Year
+Github: juliaziqingcai
+Fun fact: I'm only 151cm tall!
