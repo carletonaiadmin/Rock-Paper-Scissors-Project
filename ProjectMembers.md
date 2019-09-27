@@ -39,3 +39,8 @@ Github: kelvinttran
 Cognitive Science, 1st Year, Python
 
 Github: blankkcanvas
+
+## Hasan Baig
+Computer Systems, 3rd Year
+
+Github: Hasan-Baig
