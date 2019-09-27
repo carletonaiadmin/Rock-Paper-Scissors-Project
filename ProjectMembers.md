@@ -53,5 +53,7 @@ Fun fact: I'm only 151cm tall!
 
 ## Hasan Baig
 Computer Systems, 3rd Year
+## Emmanuel Dairo
+4th year comp sci: java is my strongest suit, I have experience with JS,C and C++, but barely did anything in python  :(
 
 Github: Hasan-Baig
