@@ -12,3 +12,8 @@ Add your name, major, favorite programming language, github username, and anythi
 Math, 4th Year, Python
 
 Github: sjsPuzzler
+
+## Hamza Sohail
+Computer Science, 1st Year, Python and C/C++
+
+Github: h4sohail
