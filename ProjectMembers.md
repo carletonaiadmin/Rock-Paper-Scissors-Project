@@ -64,3 +64,7 @@ Github: mtemkit
 
 ## Johnny Park
 Stat,1,JohnnyPark99
+
+## Gordon Tang
+computer science 1st year
+
