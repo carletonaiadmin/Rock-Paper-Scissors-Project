@@ -11,4 +11,6 @@ Add your name, major, favorite programming language, github username, and anythi
 </p>
 Math, 4th Year, Python
 
+## David Araya
+
 Github: sjsPuzzler
