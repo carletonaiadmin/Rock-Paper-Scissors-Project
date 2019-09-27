@@ -45,3 +45,8 @@ Computer Engineering, Meng, Python
 
 ## Revanth Sridhar
 Mengg Student with Specialization in Data Science
+
+## Julia Cai
+Computer Science, 3rd Year
+Github: juliaziqingcai
+Fun fact: I'm only 151cm tall!
