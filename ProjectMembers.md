@@ -50,3 +50,8 @@ Mengg Student with Specialization in Data Science
 Computer Science, 3rd Year
 Github: juliaziqingcai
 Fun fact: I'm only 151cm tall!
+
+## Hasan Baig
+Computer Systems, 3rd Year
+
+Github: Hasan-Baig
