@@ -55,3 +55,7 @@ Fun fact: I'm only 151cm tall!
 Computer Systems, 3rd Year
 
 Github: Hasan-Baig
+
+## Mohamed Temkit
+Computer Science, 1st Year
+Github: mtemkit
