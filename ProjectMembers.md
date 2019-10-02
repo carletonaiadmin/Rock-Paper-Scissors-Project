@@ -11,7 +11,7 @@ Add your name, major, favorite programming language, github username, and anythi
 </p>
 Math, 4th Year, Python
 
-Github: sjsPuzzler
+Github: david-araya
 
 ## David Araya
 Computer Science, COBOL, david-araya, I would like to stop Climate Change
