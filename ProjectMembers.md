@@ -11,12 +11,12 @@ Add your name, major, favorite programming language, github username, and anythi
 </p>
 Math, 4th Year, Python
 
-Github: david-araya
+Github: sjsPuzzler
 
 ## David Araya
-Computer Science, COBOL, david-araya, I would like to stop Climate Change
+Computer Science, 4th year, COBOL, I would like to stop Climate Change
 
-Github: sjsPuzzler
+Github: david-araya
 
 ## Hamza Sohail
 Computer Science, 1st Year, Python and C/C++
