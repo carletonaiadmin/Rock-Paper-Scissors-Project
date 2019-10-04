@@ -12,3 +12,5 @@ https://towardsdatascience.com/how-to-win-over-70-matches-in-rock-paper-scissors
 [Example codes](http://www.rpscontest.com/)
 
 (You can find a large set of algorithms in Python that do pretty much what we're trying to do as a link on the above page, the small difference is that we will be playing real players instead of other algorithms and using Python 3 (not 2).)
+
+Woo I'm Deen c:
