@@ -68,3 +68,6 @@ Stat,1,JohnnyPark99
 ## Gordon Tang
 computer science 1st year
 
+## Mital Raithatha
+MASC systems and computer engineering
+Python,C,Matlab
