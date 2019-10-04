@@ -51,6 +51,12 @@ Computer Science, 3rd Year
 Github: juliaziqingcai
 Fun fact: I'm only 151cm tall!
 
+## Deen Haque
+Second Year Undergrad Computer Science c:
+Fav Language: English hehe
+Github: deenhaque
+Yeah, I'm pretty great.
+
 ## Hasan Baig
 Computer Systems, 3rd Year
 ## Emmanuel Dairo
