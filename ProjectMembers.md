@@ -76,6 +76,6 @@ computer science 1st year
 
 ## Mital Raithatha
 MASC systems and computer engineering
-Python,C,Matlab
+C,Matlab
 
 ## Woo I'm Deen c:
