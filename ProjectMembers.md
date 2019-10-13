@@ -86,6 +86,6 @@ GitHub: JohnnyPark99
 Computer Science, 1st year
 
 ## Mital Raithatha
-MASC Systems and Computer Engineering
+MSc Systems and Computer Engineering
 
 Languages: C, Matlab
