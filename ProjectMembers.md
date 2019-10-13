@@ -41,41 +41,51 @@ Cognitive Science, 1st Year, Python
 Github: blankkcanvas
 
 ## MANOJ GOLI
-Computer Engineering, Meng, Python
+Computer Engineering, Python
+
+Github: manoj-goli
 
 ## Revanth Sridhar
-Mengg Student with Specialization in Data Science
+MEng with a specialization in Data Science
 
 ## Julia Cai
 Computer Science, 3rd Year
+
 Github: juliaziqingcai
+
 Fun fact: I'm only 151cm tall!
 
 ## Deen Haque
 Second Year Undergrad Computer Science c:
+
 Fav Language: English hehe
+
 Github: deenhaque
+
 Yeah, I'm pretty great.
 
 ## Hasan Baig
 Computer Systems, 3rd Year
+
 ## Emmanuel Dairo
-4th year comp sci: java is my strongest suit, I have experience with JS,C and C++, but barely did anything in python  :(
+4th year comp sci: java is my strongest suit, I have experience with JS,C and C++
 
 Github: Hasan-Baig
 
 ## Mohamed Temkit
 Computer Science, 1st Year
+
 Github: mtemkit
 
 ## Johnny Park
-Stat,1,JohnnyPark99
+Stat, 1st Year
+
+GitHub: JohnnyPark99
 
 ## Gordon Tang
-computer science 1st year
+Computer Science, 1st year
 
 ## Mital Raithatha
-MASC systems and computer engineering
-C,Matlab
+MASC Systems and Computer Engineering
 
-## Woo I'm Deen c:
+Languages: C, Matlab
