@@ -23,6 +23,73 @@ class Game():
 
     def get_sessionList(self):
         return self.sessionList
+    def record(self, human_choice, ai_choice, win): # method to save round data
+        round = [human_choice, ai_choice, win]
+        self.data.append(round)
+
+    def print_record(self): # method to print all previous round data
+        for i in range (0, len(self.data)):
+            print("Round # " + str(i+1) + ": " + str(self.data[i][0]) + ", " + str(self.data[i][1]) + ", " + str(self.data[i][2]) + "\n")
+
+    def print_bar_graph(self): # method to print all results of previous rounds as a horiztonal bar graph
+        human_wins = 0
+        ai_wins = 0
+        draws = 0
+        result = ''
+        for i in range(0, len(self.data)):
+            if (self.data[i][2] == "Human"):
+                human_wins += 1
+
+            elif (self.data[i][2] == "AI"):
+                ai_wins += 1
+
+            else:
+                draws += 1
+        # HUMAN WINS
+        for i in range(0,human_wins):
+            result += '#'
+        print("Human Wins   :  |" + result)
+        result = ''
+
+        # AI WINS
+        for i in range(0, ai_wins):
+            result += '#'
+
+        print("AI Wins      :  |" + result)
+        result = ''
+
+        # DRAWS
+        for i in range(0, draws):
+            result += '#'
+
+        print("Draws        :  |" + result)
+        result = ''
+
+    def save_game(self, file_name):
+        f = open(file_name + '.txt', 'w')
+
+        for i in range(len(self.data)):
+            f.writelines( str(self.data[i][0]) + "," + str(self.data[i][1]) + "," + str(self.data[i][2]) + "\n")
+
+        f.close()
+
+    def load_game(self, file_name): # method to load previous game data
+        if file_name[len(file_name):len(file_name)-4:-1] == 'txt.':
+            pass
+        else:
+            file_name += '.txt'
+        f = open(file_name, 'r')
+
+        self.data = []
+
+        for line in f.readlines():
+            line = line[:len(line)-1]
+            words = line.split(",")
+            self.data.append(words)
+            print(line)
+
+        self.sessions = len(self.data)
+        f.close()        
 
 
 # Player class, inherits from Game class
