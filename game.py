@@ -1,7 +1,6 @@
 import random
 import matplotlib.pyplot as plt
 
-
 # Game class, has the options, a session tracker and the game state
 class Game():
     options = ['rock', 'paper', 'scissors']  # list of choices
@@ -161,9 +160,12 @@ def main():
             print(f'[{human.name} won]')
             human.wins += 1
 
+
+### What is happening here?
         ai.winRate.append(ai.wins / game.get_sessions())
         human.winRate.append(human.wins / game.get_sessions())
         game.sessionList.append(game.get_sessions())
+###
         print('------------------------')
         print(f'Total sessions ran: {game.get_sessions()}')  # display total sessions ran
         print(f'SCORES ---- Humans: {human.wins} AI: {ai.wins}')
