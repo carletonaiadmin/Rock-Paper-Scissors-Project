@@ -159,9 +159,13 @@ def main():
             human.wins += 1
 
         game.sessions += 1  # track game sessions
+
+
+### What is happening here?
         ai.winRate.append(ai.wins / game.get_sessions())
         human.winRate.append(human.wins / game.get_sessions())
         game.sessionList.append(game.get_sessions())
+###
         print('------------------------')
         print(f'Total sessions ran: {game.get_sessions()}')  # display total sessions ran
         print(f'SCORES ---- Humans: {human.wins} AI: {ai.wins}')
