@@ -7,7 +7,7 @@ class Game():
     options = ['rock', 'paper', 'scissors']  # list of choices
     sessions = 0  # tracker for amount of games played
     __state = None  # game state (this attribute is private so it can not be modified by accident)
-    sessionList = []
+    session_list = [] 
 
     def __init__(self):  # constructor that starts the game
         self.__state = True
@@ -15,14 +15,15 @@ class Game():
     def close(self):  # method to close the game
         self.__state = False
 
-    def get_state(self):  # method to get the current state of the game
+    def get_state(self):  # get the current state of the game
         return self.__state
 
-    def get_sessions(self):  # method to return the amount of times game has ran
+    def get_sessions(self):  # get the amount of times game has ran
         return self.sessions
 
-    def get_sessionList(self):
-        return self.sessionList
+    def get_session_list(self):  # get the session list
+        return self.session_list
+
     def record(self, human_choice, ai_choice, win): # method to save round data
         round = [human_choice, ai_choice, win]
         self.data.append(round)
@@ -65,7 +66,7 @@ class Game():
         print("Draws        :  |" + result)
         result = ''
 
-    def save_game(self, file_name):
+    def save_game(self, file_name): # method to save the game data
         f = open(file_name + '.txt', 'w')
 
         for i in range(len(self.data)):
@@ -98,27 +99,29 @@ class Player(Game):
 
     def __init__(self):  # constructor that sets the name to 'Human'
         self.name = 'Human'
-        self.winRate = []
+        self.win_rate = []
         self.wins = 0
 
     def set_choice(self):  # get the choice from the human player
         print('Select from rock, paper or scissors')
         self.choice = input('Input your choice: ')
 
-    def get_choice(self):  # return the choice
+    def get_choice(self):  # get the player's choice
         return self.choice
+
+    def get_win_rate(self): # get the win rate as a percentage
+        return int(self.win_rate[-1]*100) 
 
 
 # AiPlayer class, inherits from Player class
 class AiPlayer(Player):
     def __init__(self):
         self.name = 'AI'  # constructor that sets the name to 'AI'
-        self.winRate = []
+        self.win_rate = []
         self.wins = 0
 
-    def set_choice(self):  # set the choice for AI and return it
+    def set_choice(self):  # set the choice for AI
         self.choice = self.options[random.randint(0, 2)]
-        return self.choice
 
 
 # main function
@@ -137,8 +140,8 @@ def main():
 
         ai.set_choice()  # set the ai choice
 
-        print(f'{human.name} selected: {human.get_choice()}')
-        print(f'{ai.name} selected: {ai.get_choice()}')
+        print(f'{human.name} selected: {human.get_choice()}') # display the human choice
+        print(f'{ai.name} selected: {ai.get_choice()}') # display the ai choice
 
         # compare the choices and display the winner
         print('------------------------')
@@ -161,15 +164,16 @@ def main():
             print(f'[{human.name} won]')
             human.wins += 1
 
-        ai.winRate.append(ai.wins / game.get_sessions())
-        human.winRate.append(human.wins / game.get_sessions())
-        game.sessionList.append(game.get_sessions())
+        ai.win_rate.append(ai.wins / game.get_sessions()) # track the ai win rate
+        human.win_rate.append(human.wins / game.get_sessions()) # track the human win rate
+        game.session_list.append(game.get_sessions()) # track each game session in a list (used for the matplotlib graph later)
+
         print('------------------------')
         print(f'Total sessions ran: {game.get_sessions()}')  # display total sessions ran
-        print(f'SCORES ---- Humans: {human.wins} AI: {ai.wins}')
-        print(f'AI WINRATE: {ai.winRate}')
-        print(f'HUMAN WINRATE: {human.winRate}')
-        print(f'SESSION LIST: {game.sessionList}')
+        print(f'SCORES ---- Humans: {human.wins} AI: {ai.wins}') # display the individual wins
+        print(f'AI Win Rate: {ai.get_win_rate()}%') # display the ai win rate 
+        print(f'HUMAN Win Rate: {human.get_win_rate()}%') # display the human win rate
+
         exit_condition = input('Would you like to continue? y/n: ')  # get the exit condition
 
         if exit_condition not in ['y', 'n']:  # check the input and break the loop if it is not what we want
@@ -177,11 +181,12 @@ def main():
             break
 
         elif exit_condition == 'n':
-            plt.plot(game.sessionList, ai.winRate, color='blue')
-            plt.plot(game.sessionList, human.winRate, color='green')
+            plt.plot(game.session_list, ai.win_rate, color='blue')
+            plt.plot(game.session_list, human.win_rate, color='green')
             plt.show()
             plt.xlabel('Sessions')
             plt.ylabel('Win Rate')
+
             game.close()  # close the game
 
         else:
