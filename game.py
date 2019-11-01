@@ -89,8 +89,7 @@ class Game():
             print(line)
 
         self.sessions = len(self.data)
-        f.close()        
-
+        f.close()
 
 # Player class, inherits from Game class
 class Player(Game):
@@ -133,7 +132,7 @@ def main():
 
         if human.get_choice() not in game.options:  # check the input and break the loop if the input is not what we want
             print('Error 1: Incorrect input')
-            break
+            continue
 
         ai.set_choice()  # set the ai choice
 
@@ -174,7 +173,7 @@ def main():
 
         if exit_condition not in ['y', 'n']:  # check the input and break the loop if it is not what we want
             print('Error 2: Incorrect input')
-            break
+            continue
 
         elif exit_condition == 'n':
             plt.plot(game.sessionList, ai.winRate, color='blue')
