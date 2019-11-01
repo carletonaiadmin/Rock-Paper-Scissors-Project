@@ -1,7 +1,7 @@
 import random
 import matplotlib.pyplot as plt
 
-
+#Test fork plese ignore
 # Game class, has the options, a session tracker and the game state
 class Game():
     options = ['rock', 'paper', 'scissors']  # list of choices
