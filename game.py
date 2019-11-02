@@ -88,8 +88,7 @@ class Game():
             print(line)
 
         self.sessions = len(self.data)
-        f.close()        
-
+        f.close()
 
 # Player class, inherits from Game class
 class Player(Game):
@@ -127,12 +126,11 @@ def main():
     ai = AiPlayer()  # initialize the AiPlayer object
 
     while (game.get_state() == True):  # keep looping if the game state is True
-        game.sessions += 1  # track game sessions
         human.set_choice()  # set human choice
 
         if human.get_choice() not in game.options:  # check the input and break the loop if the input is not what we want
             print('Error 1: Incorrect input')
-            break
+            continue
 
         ai.set_choice()  # set the ai choice
 
@@ -160,6 +158,8 @@ def main():
             print(f'[{human.name} won]')
             human.wins += 1
 
+        game.sessions += 1  # track game sessions
+
 
 ### What is happening here?
         ai.winRate.append(ai.wins / game.get_sessions())
@@ -172,13 +172,16 @@ def main():
         print(f'AI WINRATE: {ai.winRate}')
         print(f'HUMAN WINRATE: {human.winRate}')
         print(f'SESSION LIST: {game.sessionList}')
-        exit_condition = input('Would you like to continue? y/n: ')  # get the exit condition
 
-        if exit_condition not in ['y', 'n']:  # check the input and break the loop if it is not what we want
-            print('Error 2: Incorrect input')
-            break
+        while(True):
+            exit_condition = input('Would you like to continue? y/n: ')  # get the exit condition
+            if exit_condition not in ['y', 'n']:  # check the input and break the loop if it is not what we want
+                print('Error 2: Incorrect input')
+                continue
+            else:
+                break
 
-        elif exit_condition == 'n':
+        if exit_condition == 'n':
             plt.plot(game.sessionList, ai.winRate, color='blue')
             plt.plot(game.sessionList, human.winRate, color='green')
             plt.show()
