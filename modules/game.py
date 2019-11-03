@@ -1,5 +1,4 @@
 import os, json
-import matplotlib.pyplot as plt
 
 
 # Game class, has the options, a session tracker and the game state
@@ -64,9 +63,4 @@ class Game():
                 return (player_data, ai_data, game_data)
             else:
                 break
-
-
-class DrawData(Game): # TO:DO class to visualize the data
-    def bar_graph(self): 
-        pass
 

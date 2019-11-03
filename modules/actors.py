@@ -1,6 +1,5 @@
 import random
-from game import Game
-
+from .game import Game
 
 # Player class, inherits from Game class
 class Player(Game):

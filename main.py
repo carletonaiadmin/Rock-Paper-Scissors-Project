@@ -1,6 +1,6 @@
-from game import Game, DrawData
-from actors import Player, AiPlayer
-
+from modules.game import Game
+from modules.actors import Player, AiPlayer
+from modules.draw import DrawData
 
 # main function
 def main():
