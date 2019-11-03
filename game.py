@@ -173,14 +173,17 @@ def main():
         print(f'SCORES ---- Humans: {human.wins} AI: {ai.wins}') # display the individual wins
         print(f'AI Win Rate: {ai.get_win_rate()}%') # display the ai win rate 
         print(f'HUMAN Win Rate: {human.get_win_rate()}%') # display the human win rate
+        
+        while(True):
+            exit_condition = input('Would you like to continue? y/n: ')  # get the exit condition
 
-        exit_condition = input('Would you like to continue? y/n: ')  # get the exit condition
-
-        if exit_condition not in ['y', 'n']:  # check the input and break the loop if it is not what we want
-            print('Error 2: Incorrect input')
-            break
-
-        elif exit_condition == 'n':
+            if exit_condition not in ['y', 'n']:  # check the input and break the loop if it is not what we want
+                print('Error 2: Incorrect input')
+                continue
+            else:
+                break
+        
+        if exit_condition == 'n':
             plt.plot(game.session_list, ai.win_rate, color='blue')
             plt.plot(game.session_list, human.win_rate, color='green')
             plt.show()
