@@ -36,10 +36,10 @@ class Game():
                 with open(f'saves/{filename}/ai_data.json', 'w+') as fp:
                     json.dump(ai_data, fp) # save ai data in json format
                 with open(f'saves/{filename}/game_data.json', 'w+') as fp:
-                    json.dump(game_data, fp) # save game data in json format
-                break
+                    json.dump(game_data, fp) # save game data in json format    
+                return True
             else:
-                break
+                return False
             
     def load_game(self): # method to load previous game data
         while(True):
@@ -60,7 +60,7 @@ class Game():
                     print(identifier)
                     continue
                 
-                return (player_data, ai_data, game_data)
+                return (player_data, ai_data, game_data, True)
             else:
-                break
+                return False
 
