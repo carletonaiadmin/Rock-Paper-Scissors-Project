@@ -7,8 +7,8 @@ def main():
     game = Game()  # initialize the Game object
     human = Player()  # initialize the Player object
     ai = AiPlayer()  # initialize the AiPlayer object
-    (player_data, ai_data, game_data, loaded) = game.load_game() # ask to load the previous game (load_game() returns a tuple of 3 elements)
-    if loaded == True: # only load if data tuple is non empty
+    (player_data, ai_data, game_data, loaded) = game.load_game() # ask to load the previous game (load_game() returns a tuple of 4 elements)
+    if loaded == True: # only load data if game.load_game() ran succesfully
         human.name = player_data['name']
         human.wins = player_data['wins']
         human.win_rate = player_data['win_rate']
@@ -42,19 +42,19 @@ def main():
 
         elif ai.choice == 'rock' and human.choice == 'scissors':
             print(f'[{ai.name} won]')
-            ai.wins += 1
+            ai.wins += 1 # increment ai win by 1
 
         elif ai.choice == 'paper' and human.choice == 'rock':
             print(f'[{ai.name} won]')
-            ai.wins += 1
+            ai.wins += 1 # increment ai win by 1
 
         elif ai.choice == 'scissors' and human.choice == 'paper':
             print(f'[{ai.name} won]')
-            ai.wins += 1
+            ai.wins += 1 # increment ai win by 1
 
         else:
             print(f'[{human.name} won]')
-            human.wins += 1
+            human.wins += 1 # increment player win by 1
         print('------------------------')
         
         game.sessions += 1  # track game sessions
@@ -65,12 +65,13 @@ def main():
         print(f'AI Win Rate: {ai.get_win_rate()}%') # display the ai win rate 
         print(f'HUMAN Win Rate: {human.get_win_rate()}%') # display the human win rate
 
+    # player, ai and game data is saved in dictionaries for the purpose of saving
     player_data = {"name": human.name, "wins": human.wins, "win_rate": human.win_rate}
     ai_data = {"name": ai.name, "wins": ai.wins, "win_rate": ai.win_rate}
     game_data = {"sessions": game.sessions}
 
-    save_status = game.save_game(player_data, ai_data, game_data)
-    if save_status == True:
+    save_status = game.save_game(player_data, ai_data, game_data) # asks to save the game
+    if save_status == True: # print a message if saved succesfully
         print('Saved game succesfully')
 
 # entry point
