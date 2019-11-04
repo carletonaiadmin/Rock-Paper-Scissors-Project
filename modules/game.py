@@ -62,5 +62,5 @@ class Game():
                 
                 return (player_data, ai_data, game_data, True)
             else:
-                return False
+                return (None, None, None, False)
 
