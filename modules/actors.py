@@ -65,6 +65,7 @@ class AiPlayer(Player):
         self.name = 'AI'  # set the name
         self.win_rate = [] # win rate of all sessions
         self.wins = 0 # total wins
+        self.ties= 0 # total draws
 
     def set_choice(self):  # set the choice for AI
         '''
