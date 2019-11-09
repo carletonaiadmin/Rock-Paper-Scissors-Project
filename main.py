@@ -39,6 +39,7 @@ def main():
 
         if game.sessions == 1: # if it's the first round
             ai.set_choice()  # set the ai choice (randomly)
+            ai.ties += 1 # increment tie by 1 
         
         else:
             if game.sessions % 5 == 0: # every 5 rounds
@@ -102,6 +103,10 @@ def main():
     if save_status == True: # print a message if saved succesfully
         print('Saved game succesfully')
 
+    #Post game figure display feature
+    draw = DrawData()
+    draw.bar_graph(human.wins,ai.ties,ai.wins) #Bar graph for wins ties and losses(In player perspective)
+    draw.winrate_line_graph(human.win_rate,ai.win_rate,game.sessions)#Line graph for player winrate and AI winrate
 
 # entry point
 if __name__ == '__main__':
