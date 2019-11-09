@@ -40,7 +40,7 @@ Cognitive Science, 1st Year, Python
 
 GitHub: blankkcanvas
 
-## MANOJ GOLI
+## Manoj Goli
 Computer Engineering, Python
 
 GitHub: manoj-goli
