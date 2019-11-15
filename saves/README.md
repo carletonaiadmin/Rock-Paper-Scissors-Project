@@ -1,0 +1,1 @@
+The game's save files are stored here.
