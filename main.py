@@ -39,7 +39,6 @@ def main():
 
         if game.sessions == 1: # if it's the first round
             ai.set_choice()  # set the ai choice (randomly)
-            ai.ties += 1 # increment tie by 1 
         
         else:
             if game.sessions % 5 == 0: # every 5 rounds
@@ -68,7 +67,8 @@ def main():
         # compare the choices and display the winner
         if ai.choice == human.choice:
             print('[Draw]')
-
+            ai.ties += 1 # increment tie by 1 
+            
         elif ai.choice == 'rock' and human.choice == 'scissors':
             print(f'[{ai.name} won]')
             ai.wins += 1 # increment ai win by 1
