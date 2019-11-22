@@ -38,16 +38,6 @@ class Player(Game):
         last_choice = self.history[-1]
         return last_choice
 
-    def get_all_choices(self):
-        '''
-        Gets all of the players choices
-        
-        Returns:
-            last_choice: Returns the last choice of the player
-        '''
-        last_choice = self.history
-        return last_choice
-
     def frequent_choice(self):
         '''
         Gets the most frequent choice of the player
