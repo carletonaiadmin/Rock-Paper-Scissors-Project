@@ -6,7 +6,6 @@ class Game():
     options = ['rock', 'paper', 'scissors', 'exit']  # list of choices
     sessions = 0  # tracker for amount of games played
     __state = None  # game state (this attribute is private so it can not be modified by accident)
-    # game data, to save and retrieve later
 
     def __init__(self):  # constructor that starts the game
         self.__state = True
