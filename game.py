@@ -123,6 +123,20 @@ class AiPlayer(Player):
     def set_choice(self):  # set the choice for AI
         self.choice = self.options[random.randint(0, 2)]
 
+class Frequency(Player):
+
+all_freq = {}
+
+        for i in human_choice:
+            if i in human_choice is 0:
+                all_freq[0] += 1
+                elif i in human_choice is 1:
+                    all_freq[1] += 1
+                    i = i+1
+                    else 
+                    all_freq[2] += 1
+
+        
 
 # main function
 def main():
