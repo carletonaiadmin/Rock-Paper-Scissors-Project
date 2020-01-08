@@ -19,15 +19,21 @@ Computer Science, 4th year, COBOL, I would like to stop Climate Change
 GitHub: david-araya
 
 ## Hamza Sohail
-Computer Science, 1st Year, Python and C/C++
+Computer Science, 1st Year, Python, Java and C/C++
 
 GitHub: h4sohail
 
 ## Shane Fernandes
 
-Computer Science, 1st Year, Python
+Computer Science, 1st Year, Python and Java
 
 GitHub: shane-f03
+
+## Musa Ali
+
+Computer Science, 1st Year, Python and Java
+
+GitHub: hellomusa
 
 ## Kelvin Tran
 Computer Science, 3rd Year
